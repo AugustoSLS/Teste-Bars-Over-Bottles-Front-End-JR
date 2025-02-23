@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fcc278efc5.js" crossorigin="anonymous"></script>
+    <script src="./js/counter.js"></script>
+    <script src="./js/img.js"></script>
+    <script src="./js/button.js"></script>
+    <script src="./js/buttonsize.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/carousel.css">
+    <title>AVIATO</title>
+</head>
+<body>
+
+    <header>
+        <div class="disp-block">
+            <div class="row align-item-center font-small">
+                <div class="align-item-center" id="phone">
+                    <i class="fa-solid fa-phone fa-rotate-90"></i>
+                    <p> 11 4191 4399</p>
+                </div>
+                <div class="text-center font-small" id="logo">
+                    <a href="home.html"><h1>AVIATO</h1></a>
+                </div>
+                <div class="align-item-center font-small" id="cart">
+                    <i class="material-icons">shopping_bag</i>
+                    <a href="">R$ 0.00</a>
+                </div>
+            </div>
+        </div>    
+    </header>
+
+    <nav class="align-item-center font-nav ">
+        <ul class="row relative">
+            <li class="nav-selected">
+                <a>HOME</a>
+            </li>
+            <li>
+                <a>
+                    CAMISAS
+                </a>
+            </li>
+            <li>
+                <a>
+                    BLUSAS
+                </a>
+            </li>
+            <li>
+                <a>
+                    CALÇAS
+                </a>
+            </li>
+            <li>
+                <a>
+                    ACESSÓRIOS
+                </a>
+            </li>
+            <li>
+                <a id="outlet">OUTLET</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="font-small justify-content text-center" id="bread2">
+        <p>Home - Blusas e Camisas - Gravida Est Quis Euismod</p>
+    </div>
+
+<div class="product-body">
+    <div class="product-content">
+        <div class="product-image">
+            <img id="main-image" src="./img/shirt.webp" alt="Produto">
+            <div class="thumbnail-container">
+                <img src="./img/shirt.webp" alt="Imagem 1" onclick="changeImage('./img/shirt.webp')">
+                <img src="./img/shirt2.webp" alt="Imagem 1" onclick="changeImage('./img/shirt2.webp')">
+                <img src="./img/shirt3.webp" alt="Imagem 3" onclick="changeImage('./img/shirt3.webp')">
+            </div>
+        </div>
+        <div class="product-details">
+            <div>
+                <h2 class="product-title">Product Est Quis Euismod</h2>
+                <p class="product-price">R$ 155.55</p>
+                <p class="product-description">But I must explain to you how all this mistaken ideia of ouncing
+                    and aising pain was born and I will give you a complete count of ut I must explain to you
+                    how all this aken idea of enouncing pleasure born and I will give you a complete account of
+                </p>
+            </div>
+
+            <div>
+                <h3>CORES</h3>
+                <div class="color-options">
+                    <button class="color-button active" id='color-btn' style="background: #0069cb;" onclick="setActive(this)"></button>
+                    <button class="color-button" id='color-btn' style="background: #ff6565;" onclick="setActive(this)"></button>
+                    <button class="color-button" id='color-btn' style="background: #7854ff;" onclick="setActive(this)"></button>
+                    <button class="color-button" id='color-btn' style="background: #00cd65;" onclick="setActive(this)"></button>
+                </div>
+            </div>
+            
+            <div>
+                <h3>TAMANHOS</h3>
+                <div class="btn-size">
+                <button class="btn-size-a" onclick="setActiveS(this)">P</button>
+                <button class="btn-size-a" onclick="setActiveS(this)">M</button>
+                <button class="btn-size-a" onclick="setActiveS(this)">G</button>
+                <button class="btn-size-a" onclick="setActiveS(this)">XG</button>
+                <button class="btn-size-a" onclick="setActiveS(this)">XXG</button>
+                </div>
+            </div>
+            
+            <div class="btn-buy-align">
+                <div class="counter-div">
+                    <button class="btn btn-decrease" onclick="decrease()">-</button>
+                    <p class="counter" id="counter">1</p>
+                    <button class="btn btn-increase" onclick="increase()">+</button>
+                </div>  
+            <button class="font-small inside-border" id="btn-buy">COMPRAR</button>
+            </div>
+
+            <div class="accordion-box">
+                <div> 
+                    <button class="accordion">DESCRIÇÃO</button>
+                        <div class="accordion-content">
+                            <p>But I must explain to you how all this mistaken ideia of ouncing
+                                and aising pain was born give But I must explain to you how all this mistaken ideia of ouncing
+                                and aising pain was born give</p>
+                        </div>
+                </div>
+                <div> 
+                    <button class="accordion">ESPECIFICAÇÕES</button>
+                        <div class="accordion-content">
+                            <p>But I must explain to you how all this mistaken ideia of ouncing
+                                and aising pain was born give But I must explain to you how all this mistaken ideia of ouncing
+                                and aising pain was born give</p>
+                        </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+<div class="text-center" id="relacionados">
+    <h3>PRODUTOS RELACIONADOS</h3>
+    <div class="row">
+            <div id="box-clot">
+                <img class="carousel__image" src="./img/shirt.webp" alt="camisa x">
+                    <div id="box-clot-text">
+                        <p id="description">Creative Adidas T-Shirt</p>
+                        <p id="price">R$ 150.55</p>
+                    </div>
+            </div>
+            <div id="box-clot">
+                <img class="carousel__image" src="./img/shirt.webp" alt="camisa x">
+                    <div id="box-clot-text">
+                        <p id="description">Mango-Navy</p>
+                        <p id="price">R$ 190.99</p>
+                    </div>
+            </div>
+            <div id="box-clot">
+                <img class="carousel__image" src="./img/shirt.webp" alt="camisa x">
+                    <div id="box-clot-text">
+                        <p id="description">Gravida Est Quis Euismod</p>
+                        <p id="price">R$ 150.55</p>
+                    </div>
+            </div>
+            <div id="box-clot">
+                <img class="carousel__image" src="./img/shirt.webp" alt="camisa x">
+                    <div id="box-clot-text">
+                        <p id="description">Mango-Navy</p>
+                        <p id="price">R$ 190.99</p>
+                    </div>
+            </div>   
+        </div>
+    </div>
+</div>
+
+
+    <footer>
+        <div class="row" id="footer-f">
+            <div>
+               <a><p>CONTATO</p></a>
+                <a><p>FRETES E ENTREGA</p></a>
+                <a><p>COMO COMPRAR</p></a>
+                <a><p>TROCAS E DEVOLUÇÕES</p></a>
+            </div>
+            <div>
+                <a><p>SOBRE</p></a>
+                <a><p>NA MÍDIA</p></a>
+                <a><p>SEGURANÇA</p></a>
+                <a><p>POLÍTICAS</p></a>
+            </div>
+            <div>
+                <p>CADASTRE-SE E RECEBA NOSSAS NOVIDADES</p>
+                <a>    
+                    <button id="button-sign">CADASTRAR</button>
+                </a>
+            </div>
+        </div>
+            <div class="row align-item-center" id="footer-s">
+                <div id="footer-box1">
+                    <p>COPYRIGHT © 2019</p>
+                </div>
+                <div class="row" id="footer-box2">
+                    <a>
+                        <p>FAQ</p>
+                    </a>
+                    <a>
+                    <p>MINHA CONTA</p>
+                    </a>
+                    <a>
+                        <p>MEUS PEDIDOS</p>
+                    </a>
+                </div>
+                <div id="footer-box2">
+                    <a>
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a>
+                    <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a>
+                    <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a>
+                    <i class="fa-brands fa-tumblr"></i>
+                    </a>
+                    <a>
+                    <i class="fa-brands fa-pinterest"></i>
+                    </a>
+                </i>
+                </div>
+            </div>
+    </footer>  
+</body>
+<script src="./js/accordion.js"></script>
+    </html>
