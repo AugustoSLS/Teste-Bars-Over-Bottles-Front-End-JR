@@ -1,0 +1,84 @@
+:root{
+    --black: #000;
+    --grey-dark: #333;
+    --grey: #7a7a7a;
+    --grey-d2: #6e6e6e;
+}
+
+.sec__carousel {
+    height: 100%;
+    margin-bottom: 100px;
+}
+
+.carousel {
+    position: relative;
+    height: 500px;
+    width: 100%;
+    margin: 0 auto 40px;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.carousel__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel__track-container{
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+
+.carousel__track-container:last-child{
+    background-color: var(--grey);
+}
+
+.carousel__track {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    height: 100%;
+    transition: transform 250ms ease-in;
+}
+
+.carousel__slide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.carousel__button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    padding: 10px;
+    padding-left: 10px;
+    z-index: 1;
+}
+
+.carousel__button--left {
+    left: 0px;
+    background-color: #fff;
+}
+
+.carousel__button--right {
+    right: 0px;
+    background-color: #fff;
+}
+
+
+.carousel__button img{
+    width: 12px;
+}
+
+.material-icons {
+    font-size: 15px;
+    color: var(--grey-d2);
+}
