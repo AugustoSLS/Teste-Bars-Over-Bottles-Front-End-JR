@@ -13,6 +13,7 @@
 }
 
 body {
+    font-family: "Roboto" !important;   
     background-color: #fff;
     margin: 0;
 }
@@ -26,12 +27,11 @@ header {
 }
 
 h1 {
-    font-weight: 100;
+    font-weight: 400;
 }
 
 h3 {
     color: var(--grey-dark);
-    font-family: Arial, sans-serif;
     font-weight: 800;
     font-size: x-large;
 }
@@ -44,7 +44,6 @@ a {
 
 ul {
     padding: 0 20% 0 20%;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     list-style: none;
 }
 
@@ -67,7 +66,6 @@ button:hover {
 
 footer {
     color:var(--grey-dark);
-    font-family: Arial, sans-serif;
     font-weight: 700;
 }
 
@@ -172,7 +170,6 @@ footer a:hover{
     background: none;
     font-size: smaller;
     color: var(--grey);
-    font-family: system-ui;
 }
 .nav-cat .active {
     letter-spacing: 1px;
@@ -198,7 +195,6 @@ footer a:hover{
 .sort p, .view p, .view-icons p {
     font-size: smaller;
     font-weight: 700;
-    font-family: Arial;
 }
 
 .view-icons button{
@@ -220,7 +216,6 @@ footer a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: Arial, sans-serif;
     margin-bottom: 100px;
 }
 
@@ -427,7 +422,6 @@ footer a:hover{
     display: flex;
     flex-direction: column;
     background-color: var(--greyd2);
-    font-family: sans-serif;
     height: 200px;
 }
 
@@ -449,7 +443,6 @@ footer a:hover{
     display: flex;
     flex-direction: column;
     background-color: var(--greyd2);
-    font-family: sans-serif;
     height: 120px;  
 }
 
@@ -470,7 +463,6 @@ footer a:hover{
 
 #phone {
     display: flex;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: smaller;
     padding-top: 10px;
     color: var(--grey-dark);
@@ -491,7 +483,6 @@ footer a:hover{
 #carousel-text {
     top: 10%;
     margin-left: 20%;
-    font-family: Arial, sans-serif;
 }
 
 #carousel-text h2 {
@@ -542,11 +533,9 @@ footer a:hover{
     width: inherit;
     text-align: left;
     color: black;
-    font-family: Arial, sans-serif;
 }
 
 #box-text h5 {
-    font-family: system-ui;
     font-weight: 700;
     margin: 0;
     padding-left: 10%;
@@ -564,12 +553,11 @@ footer a:hover{
 }
 
 #box-text-big h5 {
-        font-family: system-ui;
-        font-weight: 700;
-        margin: 0;
-        padding-left: 10%;
-        padding-top: 7%;
-        margin-block-end: 0;
+    font-weight: 700;
+    margin: 0;
+    padding-left: 10%;
+    padding-top: 7%;
+    margin-block-end: 0;
 }
 
 #box-text-big p {
@@ -607,7 +595,6 @@ footer a:hover{
     position: absolute;
     width: inherit;
     text-align: left;
-    font-family: Arial, sans-serif;
 }
 
 #description {
@@ -616,7 +603,6 @@ footer a:hover{
     margin: 0;
     padding-top: 10px;
     color: var(--grey);
-    font-family: Arial, sans-serif;
 }
 
 #price {
@@ -625,7 +611,6 @@ footer a:hover{
     font-weight: 800;
     font-size: small;
     padding-top: 3px;
-    font-family: Arial, sans-serif;
 }
 
 #columns {
